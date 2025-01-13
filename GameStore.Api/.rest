@@ -1,0 +1,24 @@
+
+### Get all games 
+GET http://localhost:5188/games
+
+
+### Just Testing is the sout is defined to blah in Program.cs
+### This will work as long there is a route define to be app.MapGet("blah", () => games);
+
+GET http://localhost:5188/games
+
+### Retrive one game by ID
+GET http://localhost:5188/games/3
+
+
+### Creating a new Game 
+POST  http://localhost:5188/games
+Content-Type: application/json
+
+{
+  "name": "Minecraft",
+  "genre": "Kids and Family",
+  "price": 19.99,
+  "realeaseDate": "2011-11-18"
+}
