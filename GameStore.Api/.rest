@@ -9,7 +9,7 @@ GET http://localhost:5188/games
 GET http://localhost:5188/games
 
 ### Retrive one game by ID
-GET http://localhost:5188/games/3
+GET http://localhost:5188/games/4
 
 
 ### Creating a new Game 
@@ -22,3 +22,21 @@ Content-Type: application/json
   "price": 19.99,
   "realeaseDate": "2011-11-18"
 }
+
+
+### DELETE game by ID
+DELETE http://localhost:5188/games/4
+
+
+### Upadate an existing  Game 
+PUT  http://localhost:5188/games/4
+Content-Type: application/json
+
+{
+  "name": "Minecraft 2",
+  "genre": "Kids and Family",
+  "price": 20.99,
+  "releaseDate": "2024-12-19"
+}
+
+
